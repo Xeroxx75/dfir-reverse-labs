@@ -3,9 +3,6 @@
 This folder contains YARA rules written during my reverse engineering and malware analysis practice.
 They are **educational** and derived from the labs in this repository.
 
-> ⚠️ These rules are not meant for production use.
-> They are designed to illustrate pattern extraction, string selection and basic signature writing.
-
 ---
 
 ## Files
@@ -41,12 +38,3 @@ yara -r detection/yara/gpgcrypt_encrypted_file.yar /path/to/directory
 yara -s detection/yara/crackme_sallos_keylicense.yar reverse-engineering/sallos-key-license/keylicense.exe
 ```
 
----
-
-## Purpose
-
-These rules demonstrate:
-
-* how to derive signatures from reverse engineering work,
-* how to combine meaningful strings in YARA conditions,
-* and how to document rules with clear `meta` information.
